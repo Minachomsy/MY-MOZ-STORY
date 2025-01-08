@@ -1,33 +1,68 @@
-import minaimg from "./image/image1.jpg"
-function App() {
+import minaimg from "./image/image2.jpg"
+import minaimge from "./image/image1.jpg"
+function footer () {
   return (
-    <div className="Moz-Story-container">
-      <div className="header bg-primary text-white text-center py-4">
-        <h1>The Moz Story</h1>
-        <p>We Know SEO.In fact,We Wrote the blog on it</p>
-      </div>
-      <div content container my-5>
-        <section className="intro text-center mb-5">
-          <p>At Moz, we believe there is a better way to do marketing.
-             A more valuable way where customers are earned rather than bought.
-              We’re obsessively passionate about it, and our mission is to help people achieve it. 
-              We focus on search engine optimization. It’s one of the least understood and least transparent
-               aspects of great marketing, and we see that as an opportunity. 
-               We’re excited to simplify SEO for everyone through our software, education, and community</p>
-        </section>
-        <section className="founding row align-items-center mb-5">
-          <div className="col-md-6 text-center">
-            <img src={minaimg} alt="simple image"/>
-            
-
-          </div>
-
-        </section>
-
-      </div>
-
+    <footer className="bg-white text-dark py-1">
+    <div className="container text-center mb-4">
+    <h3>Email capture form for updates and promotions</h3>
+    <p>Subscibe to our newsletters and stay up to date on features and releases.</p>
+    <div className="d-flex justify-content-center">
+    <input type="email"className="form-control w-50 me-2"
+         placeholder="Enter email address"/>
+    <button className="btn btn-primary">Subscibe</button>
     </div>
-  );
-}
-
-export default App;
+    </div>
+    <div className="container-fluid bg-dark text-white py-5">
+    <div className="row">
+    <div className="col-md-4">
+    <img src={minaimg} alt="simple image"/>
+    <h5>Progframs Technology</h5>
+    <p>We help businesses succeed in the digital age,through software development,
+    providing expert advice,and offering training programs.
+    </p>
+    </div>
+    <div className="col-md-2">
+      <h5>Quick links</h5>
+      <ul className="list-unstyled">
+        <li><a href="#"className="text-light text-decoration-none">Home</a></li>
+        
+        <li><a href="#"className="text-light text-decoration-none">About</a></li>
+        
+        <li><a href="#"className="text-light text-decoration-none">services</a></li>
+        
+        <li><a href="#"className="text-light text-decoration-none">blog</a></li>
+      </ul>
+    </div>
+       <div className="col-md-2">
+        <h5>What We Do</h5>
+        <ul className="list-unstyled">
+          <li><a href="#"className="text-light text-decoration-none">Courses</a></li>
+          <li><a href="#"className="text-light text-decoration-none">Bootcamps</a></li>
+          <li><a href="#"className="text-light text-decoration-none">Consultation</a></li>
+        </ul>
+       </div>
+       <div className="col-md-2">
+       <h5>Other Links</h5>
+       <ul className="list-unstyled"><li><a href="#"className="text-light text-decoration-none">FAQ</a></li></ul>
+       <ul className="list-unstyled"><li><a href="#"className="text-light text-decoration-none">Privacy Policy</a></li></ul>
+       <ul className="list-unstyled"><li><a href="#"className="text-light text-decoration-none">Terms And Condition</a></li></ul>
+       </div>
+       <div className="col-md-2">
+        <h5>Contact Us</h5>
+        <p>+234 808 565 5780</p>
+        <p><a href="mailto:support@progfams.com.ng"className="text-light text-decoration-none">
+          support@progfams.com.ng</a></p>
+          <p>Adeniyi Jones,Ikeja,Nigeria</p>
+          <img src={minaimge} alt="simple image"/>
+          <div>
+            <a href="#"className="text-light me-2"><i className="fab fa-linkedin"></i></a>
+            <a href="#"className="text-light me-2"><i className="fab fa-twitter"></i></a>
+            <a href="#"className="text-light me-2"><i className="fab fa-facebook"></i></a>
+          </div>
+       </div>
+    </div>
+    </div>
+    </footer>
+   ); 
+};
+export default footer;
